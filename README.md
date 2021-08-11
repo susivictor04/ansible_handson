@@ -1,7 +1,7 @@
 Role Name
 =========
 
-A brief description of the role goes here.
+The webserver role is configured to install httpd in the webserver through Yum Module, copy the html files from the source to destination host and restart the httpd  service.
 
 Requirements
 ------------
