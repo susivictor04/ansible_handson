@@ -1,0 +1,16 @@
+---
+# tasks file for webserver
+
+ - name: Installing httpd Apache Server
+   yum: 
+     name: httpd
+     state: latest
+   notify: restart httpd
+
+ - name: Copying files
+   copy:
+     src: index.html
+     dest: /var/www/html/index.html"
+     mode: 0766
+   notify: restart httpd
+ 
